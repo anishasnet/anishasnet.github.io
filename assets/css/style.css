@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --light-blue: #7bc5ed;
+    --white: #ffffff;
+}
+
 body {
-    color: #7bc5ed;
+    color: var(--light-blue);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
     padding: 20px 35px;
-    background-color: #7bc5ed;
+    background-color: var(--light-blue);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,14 +24,14 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color:white;
+    font-size: 48px;
+    color: var(--white);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 header nav {
     margin: 7px 0;
@@ -42,4 +47,27 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+.hero {
+    background-image: url("../images/sky-header.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subtitle {
+    background-color: var(--light-blue);
+    padding: 20px;
+    color: var(--white);
+    border: solid 3px var(--white);
+    width: 23%;
+    margin: 9.5%;
+}
+
+.subtitle h3 {
+    font-size: 24px;
+    margin: 0;
 }
