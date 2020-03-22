@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--back)
 }
 
 :root {
     --light-blue: #7bc5ed;
     --white: #ffffff;
+    --back: #c2e3f0;
+    --line-color: #29518a;
 }
 
 body {
@@ -26,15 +29,18 @@ header h1 {
     font-weight: bold;
     font-size: 48px;
     color: var(--white);
+    background-color: var(--light-blue);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
     color: var(--white);
+    background-color: var(--light-blue);
 }
 header nav {
     margin: 7px 0;
+    background-color: var(--light-blue);
 }
 header nav ul {
     display: flex;
@@ -42,11 +48,13 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    background-color: var(--light-blue);
 }
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+    background-color: var(--light-blue);
 }
 
 .hero {
@@ -70,4 +78,21 @@ header nav ul li a {
 .subtitle h3 {
     font-size: 24px;
     margin: 0;
+    background-color: var(--light-blue);
+}
+
+.flex-row h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.flex-row {
+    display: flex;
+    margin: 10%
+}
+
+hr {
+    width:100%; 
+    height:5px;
+    background: var(--line-color);
 }
