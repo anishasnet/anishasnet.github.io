@@ -103,10 +103,6 @@ header nav ul li a {
     width: 100%;
 }
 
-.vert-line {
-    border-right: 5px solid var(--line-color);
-}
-
 .column {
     display: flex;
     flex-direction: column;
