@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* To make color scheme into variables */
+
 :root {
     --light-blue: #7bc5ed;
     --white: #ffffff;
@@ -16,6 +18,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* header style */
+
 header {
     padding: 20px 35px;
     background-color: var(--light-blue);
@@ -24,9 +28,13 @@ header {
     flex-wrap: wrap;
 }
 
+/* Keep background white */
+
 .descriptions {
     color: var(--white);
 }
+
+/* Light blue lettering */
 
 .descriptions p {
     color: var(--light-blue);
@@ -62,6 +70,7 @@ header nav ul li a {
     background-color: var(--light-blue);
 }
 
+/* hero section */
 .hero {
     align-items: flex-start;
     display: flex;
@@ -79,6 +88,7 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+/* subtitle of hero section */
 .subtitle {
     background-color: var(--light-blue);
     opacity: 70%;
@@ -98,6 +108,7 @@ header nav ul li a {
     background-color: var(--light-blue);
 }
 
+/* grid details for work section */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -145,6 +156,7 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+/* row and column set up for flexbox */
 .row {
     display: flex;
 }
@@ -172,6 +184,7 @@ header nav ul li a {
     padding-left: 123px;
 }
 
+/* contact me section */
 .contact {
     /*padding-left: 30px;
     padding-right: 10px;
@@ -182,6 +195,8 @@ header nav ul li a {
     width: 100%;
 
 }
+
+/* generic title styles */
 .title {
     font-size: 36px;
     font-size: 2.55vw;
@@ -201,6 +216,7 @@ header nav ul li a {
     width: 20%;
 }
 
+/* horizontal line */
 hr {
     width:100%; 
     height:5px;
@@ -216,6 +232,7 @@ hr {
     font-size: 1.55vw;
 }
 
+/* colored footer */ 
 footer {
     display: flex;
     justify-content: space-between;
@@ -225,6 +242,7 @@ footer {
     padding: 40px 35px;
 }
 
+/* Media Queries for various types of screens */
 @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
@@ -254,6 +272,98 @@ footer {
       
     .subtitle {
         text-align: center;
-        width: 100%
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-info {
+        flex: 1 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    footer {
+        width: 100%;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+        
+    .subtitle {
+          text-align: center;
+          width: 100%;
+          justify-content: center;
+    }
+  
+    .contact-info {
+          flex: 1 100%;
+          justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    section {
+    padding: 30px 15px;
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    footer {
+        width: 100%;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+        
+    .subtitle {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-info {
+        flex: 1 100%;
+        justify-content: center;
     }
 }
